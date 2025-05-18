@@ -1,13 +1,5 @@
 "use client";
 
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-} from "./dialog";
-
 interface ModalProps {
   title: string;
   description: string;
@@ -15,6 +7,14 @@ interface ModalProps {
   onClose: () => void;
   children?: React.ReactNode;
 }
+
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+} from "./dialog";
 
 const Modal = ({
   title,
